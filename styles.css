@@ -35,6 +35,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     background: var(--bg-dark);
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -55,6 +57,7 @@ body {
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-bottom: 2px solid transparent;
+    margin-bottom: 0;
 }
 
 .navbar.scrolled {
@@ -205,8 +208,9 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    margin-top: 70px;
     overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .hero-pattern {
@@ -313,36 +317,37 @@ body {
     box-shadow: 0 6px 25px rgba(232, 180, 160, 0.4);
 }
 
+
 /* Featured Section */
 .featured {
     padding: 5rem 0;
     background: var(--bg-charcoal);
     border-top: 1px solid rgba(212, 175, 55, 0.1);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    border-bottom: 1px solid rgba(123, 120, 109, 0.1);
 }
-
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem; /* space for underline */
     color: var(--gold);
     position: relative;
-    display: block;
-    width: 100%;
+    display: block; /* important */
 }
 
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -10px;
     left: 50%;
+    bottom: 1px; /* pushes underline away from text */
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
     background: linear-gradient(90deg, var(--gold), var(--rose-gold));
     border-radius: 2px;
 }
+
+
 
 .featured-grid {
     display: grid;
@@ -387,7 +392,6 @@ body {
     padding: 5rem 0;
     background: var(--bg-dark);
 }
-
 .menu-tabs {
     display: flex;
     justify-content: center;
@@ -395,7 +399,6 @@ body {
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
-
 .tab-btn {
     padding: 0.75rem 1.5rem;
     background: var(--bg-card);
@@ -406,7 +409,6 @@ body {
     color: var(--text-light);
     transition: var(--transition);
 }
-
 .tab-btn:hover,
 .tab-btn.active {
     background: linear-gradient(135deg, var(--gold), var(--rose-gold));
