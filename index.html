@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisk & Oven - Artisan Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <img src="logo2.jpeg" alt="Whisk & Oven Logo" class="logo-img" onerror="this.onerror=null; this.src='logo_files/1b33c407-7665-471e-bc17-6dba59b53600.png';">
+                    <h1>Whisk & Oven</h1>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#about" class = "nav-link">About us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-socials">
+                        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:yourmail@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                    </div>
+                <div class="nav-actions">
+                    <a href="https://wa.me/918248151385?text=Hello%20Whisk%20%26%20Oven!%20🍰%20I%20would%20love%20to%20order%20some%20of%20your%20handcrafted%20treats%20to%20sweeten%20my%20day!%20✨" target="_blank" class="order-btn-bright">Order Now </a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Whisk & Oven</h1>
+            <p class="hero-subtitle">Sweetly Crafted</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+       <section id="why-choose-us" class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="why-us-grid">
+                <div class="why-item">
+                    <div class="why-icon">👩‍🍳</div>
+                    <h3>Women-Led Duo</h3>
+                    <p>Founded by a mother and daughter, bringing home-style warmth to professional baking.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🌿</div>
+                    <h3>Pure Ingredients</h3>
+                    <p>We use only premium, fresh ingredients to ensure every bite is healthy and delicious.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💖</div>
+                    <h3>Crafted with Love</h3>
+                    <p>Baking isn't just a business for us; it's an art where every dessert is a masterpiece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Our Specialties</h2>
+            <div class="featured-grid">
+                <div class="featured-item"><div class="featured-icon">🍫</div><h3>Rich Brownies</h3><p>Decadent cocoa flavor with a melt-in-your-mouth texture.</p></div>
+                <div class="featured-item"><div class="featured-icon">🧁</div><h3>Cupcakes</h3><p>Moist chocolate base crowned with creamy, dreamy frosting.</p></div>
+                <div class="featured-item"><div class="featured-icon">🎂</div><h3>Custom Cakes</h3><p>Beautifully crafted cakes for every special celebration.</p></div>
+                <div class="featured-item"><div class="featured-icon">🍬</div><h3>Truffle Chocolate</h3><p>Every bite is a luxurious treat for true chocolate lovers.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="cakes">Cakes</button>
+                <button class="tab-btn" data-category="brownies">Brownies & Bars</button>
+                <button class="tab-btn" data-category="cupcakes">Cupcakes</button>
+                <button class="tab-btn" data-category="cookies">Cookies</button>
+                <button class="tab-btn" data-category="pastries">Pastries</button>
+                <button class="tab-btn" data-category="desserts">Desserts & Specials</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p><b>Whisk & Oven</b> is a women-led artisanal bakery founded by a mother–daughter duo. While pursuing my college education in IT, my passion for baking continued to grow alongside a dream of entrepreneurship.</p>
+                    <div class="about-stats">
+                        <div class="stat"><h3>10+</h3><p>Happy Customers</p></div>
+                        <div class="stat"><h3>10+</h3><p>Daily Varieties</p></div>
+                        <div class="stat"><h3>100%</h3><p>Made Fresh Daily</p></div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="logo.jpeg" style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" height="400px" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The best brownies I've ever had! So rich and fudgy."</p>
+                    <span class="reviewer">- Aditi M.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Their custom cakes are not just beautiful but also taste divine."</p>
+                    <span class="reviewer">- Karthik R.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item"><h3>📍 Location</h3><p>Pammal, Chennai</p></div>
+                    <div class="info-item"><h3>📞 Contact</h3><p>+91 8248151385<br>whiskandoven.in@gmail.com</p></div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group"><input type="text" id="name" placeholder="Name" required></div>
+                        <div class="form-group"><input type="email" id="email" placeholder="Email" required></div>
+                        <div class="form-group"><textarea id="message" rows="4" placeholder="Message" required></textarea></div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2024 Whisk & Oven. All rights reserved.</p></div>
+    </footer>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header"><h2>Your Cart</h2><button class="close-cart" id="closeCart">&times;</button></div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer"><strong>Total: $<span id="cartTotal">0.00</span></strong><button class="btn btn-primary" id="checkoutBtn">Checkout</button></div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <button class="close-checkout" id="closeCheckout">&times;</button>
+            <div id="checkoutItems"></div>
+            <form id="checkoutForm" class="checkout-form">
+                <input type="text" id="customerName" placeholder="Full Name" required>
+                <input type="tel" id="customerPhone" placeholder="Phone" required>
+                <textarea id="customerAddress" placeholder="Address" required></textarea>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
